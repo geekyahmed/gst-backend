@@ -17,7 +17,7 @@ async function getResultInfo(id: ResultDocument['_id']): Promise<ResultDocument>
     .populate({
       path: 'student',
       select: 'name email role'
-  }).select('-password').lean()
+    })
 
   if (!result) {
     throw createHttpError(StatusCodes.HTTP_STATUS_BAD_REQUEST, 'Result does not exist')

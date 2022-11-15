@@ -10,7 +10,7 @@ const config = {
     logo: process.env.APP_LOGO || "../../public/logo.png"
   },
   database: {
-    URI: process.env.DATABASE_URI || "mongodb://127.0.0.1:27017/gstdb",
+    URI: process.env.DATABASE_URI || "mongodb://127.0.0.1:27017/gst_db",
     options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
